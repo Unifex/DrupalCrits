@@ -28,11 +28,6 @@
                 "file": "fonts/UbuntuMono-Regular.ttf",
                 "name": "MONO_FONT_14",
                 "type": "font"
-            },
-            {
-                "file": "images/drupal_8_logo_p.png",
-                "name": "IMAGES_DRUPAL_8_LOGO_P_PNG",
-                "type": "png"
             }
         ]
     },
