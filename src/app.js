@@ -10,6 +10,7 @@ var ajax = require('ajax');
 
 var criticalsCard = new UI.Card({
   title: 'Drupal Crits',
+  icon: 'resources/images/drupal8-logo_small_no_trans.png',
   subtitle: 'querying issues',
   body: 'Crits: updating...'
 });
@@ -32,11 +33,12 @@ function updateCard () {
   ajax({url: URL, type: 'json'},
     function(json) {
       // Data is supplied here.
-      console.log(json);
+      //console.log(json);
       var d = json.data[0];
-      console.log (d);
+      //console.log (d);
       var crits = d.critical_bugs + d.critical_plans + d.critical_rtbc + d.critical_tasks;
-      criticalsCard.subtitle(d.when.split('T')[0]);
+      // criticalsCard.subtitle(d.when.split('T')[0]);
+      criticalsCard.subtitle('');
       criticalsCard.body('Crits: ' + crits + 
                          "\nBugs: " + d.critical_bugs +
                          "\nPlans: " + d.critical_plans +

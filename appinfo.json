@@ -10,7 +10,6 @@
         "media": [
             {
                 "file": "images/menu_icon.png",
-                "menuIcon": true,
                 "name": "IMAGE_MENU_ICON",
                 "type": "png"
             },
@@ -28,6 +27,12 @@
                 "file": "fonts/UbuntuMono-Regular.ttf",
                 "name": "MONO_FONT_14",
                 "type": "font"
+            },
+            {
+                "file": "images/drupal8-logo_small_no_trans.png",
+                "menuIcon": true,
+                "name": "IMAGES_DRUPAL8_LOGO_SMALL_NO_TRANS_PNG",
+                "type": "png"
             }
         ]
     },
@@ -37,6 +42,7 @@
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
+        "hiddenApp": false,
         "watchface": false
     }
 }
